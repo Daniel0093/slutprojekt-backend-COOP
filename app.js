@@ -21,7 +21,7 @@ app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }))
 
 // Koppla upp mot databas
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://Coop_db:projketcoop@coop-db.wkxkr.mongodb.net/test';
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, dbName: 'sinusDB' })
 
 // Ett "handtag" till vår uppkoppling
